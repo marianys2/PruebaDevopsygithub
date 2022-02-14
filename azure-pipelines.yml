@@ -21,15 +21,7 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
-- task: IISWebAppManagementOnMachineGroup@0
-  inputs:
-    IISDeploymentType: 'IISWebsite'
-    ActionIISWebsite: 'CreateOrUpdateWebsite'
-    WebsiteName: 'prueba1'
-    WebsitePhysicalPath: 'C:\agente\_work\1\s\inicio.html'
-    WebsitePhysicalPathAuth: 'WebsiteUserPassThrough'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+
 
 - task: VSTest@2
   inputs:
