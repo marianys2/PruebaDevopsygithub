@@ -16,10 +16,13 @@ variables:
 
 steps:
 - task: NuGetToolInstaller@1
+
 - task: PythonScript@0
   inputs:
     scriptSource: 'filePath'
     scriptPath: 'D:\CAlc\PruebaDevopsygithub\calculad.py'
+    pythonInterpreter: 'C:\Users\Jonathan\AppData\Local\Programs\Python\Python38-32\python.exe'
+
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
