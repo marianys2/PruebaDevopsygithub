@@ -17,6 +17,11 @@ variables:
 steps:
 - task: NuGetToolInstaller@1
 
+- script: |
+    python -m pip install flake8
+    flake8 .
+  displayName: 'Run lint tests'
+
 - task: PythonScript@0
   inputs:
     scriptSource: 'filePath'
