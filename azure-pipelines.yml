@@ -8,14 +8,7 @@ trigger: none
 
 pool:
   name: local
-  
-variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
 
-steps:
-- task: NuGetToolInstaller@1
 
 - script: |
     py -m pip install flake8
@@ -23,14 +16,3 @@ steps:
   displayName: 'Run lint tests'
   
 
-
-- task: NuGetCommand@2
-  inputs:
-    restoreSolution: '$(solution)'
-
-
-
-- task: VSTest@2
-  inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
