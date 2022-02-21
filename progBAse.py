@@ -10,11 +10,11 @@ def operacion():
     result.insert(0, int(txtnumb1.get())+int(txtnumb2.get()))
 
 
-lbNumb1 = tkinter.Label(ventana, text="Numero 1")
+lbNumb1 = tkinter.Label(ventana, text="Número 1")
 lbNumb1.pack()
 txtnumb1 = tkinter.Entry(ventana)
 txtnumb1.pack()
-lbNumb2 = tkinter.Label(ventana, text="Numero 2")
+lbNumb2 = tkinter.Label(ventana, text="Número 2")
 lbNumb2.pack()
 txtnumb2 = tkinter.Entry(ventana)
 txtnumb2.pack()
