@@ -1,5 +1,5 @@
 import tkinter
-import sys 
+import sys
 ventana = tkinter.Tk()
 ventana.title("Calculadora")
 ventana.geometry("300x300")
@@ -8,9 +8,11 @@ ventana.geometry("300x300")
 def operacion():
     resulSuma = int(txtnumb1.get())+int(txtnumb2.get())
     lbNumb2.config(text="Su resultado es:"+str(resulSuma))
-    
+
+
 def salir():
-   sys.exit(0) 
+    sys.exit(0)
+    
 
 lbNumb1 = tkinter.Label(ventana, text="Número 1")
 lbNumb1.pack()
