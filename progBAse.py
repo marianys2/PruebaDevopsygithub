@@ -23,6 +23,6 @@ lbNumb2.pack()
 
 btResolver = tkinter.Button(ventana, text="Resolver", command=operacion)
 btResolver.pack()
-btResolver = tkinter.Button(ventana, text="Salir", command=quit)
-btResolver.pack()
+btSalir = tkinter.Button(ventana, text="Salir", command=ventana.destroy)
+btSalir.pack()
 ventana.mainloop()
