@@ -12,7 +12,7 @@ def operacion():
 
 def salir():
     sys.exit(0)
-    
+
 
 lbNumb1 = tkinter.Label(ventana, text="Número 1")
 lbNumb1.pack()
