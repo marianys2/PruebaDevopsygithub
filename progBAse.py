@@ -6,8 +6,6 @@ ventana.geometry("300x300")
 
 
 def operacion():
-    #result.delete(0, tkinter.END)
-    #result.insert(0, int(txtnumb1.get())+int(txtnumb2.get()))
     lbNumb2.config(text="Su resultado es:"+str(int(txtnumb1.get())+int(txtnumb2.get())))
 
 
