@@ -20,14 +20,8 @@ txtnumb2 = tkinter.Entry(ventana)
 txtnumb2.pack()
 lbNumb2 = tkinter.Label(ventana, text="Resultado")
 lbNumb2.pack()
-
 btResolver = tkinter.Button(ventana, text="Resolver", command=operacion)
 btResolver.pack()
-<<<<<<< HEAD
-btSalir = tkinter.Button(ventana, text="Salir", command=ventana.destroy)
+btSalir = tkinter.Button(ventana, text="Salir", command=exit)
 btSalir.pack()
-=======
-btResolver = tkinter.Button(ventana, text="Salir", command=exit)
-btResolver.pack()
->>>>>>> parent of 0de92cc (Update progBAse.py)
 ventana.mainloop()
