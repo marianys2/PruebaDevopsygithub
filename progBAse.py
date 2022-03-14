@@ -6,7 +6,8 @@ ventana.geometry("300x300")
 
 
 def operacion():
-    lbNumb2.config(text="Su resultado es:"+str(int(txtnumb1.get())+int(txtnumb2.get())))
+    resulSuma = int(txtnumb1.get())+int(txtnumb2.get())
+    lbNumb2.config(text="Su resultado es:"+str(resulSuma))
 
 
 lbNumb1 = tkinter.Label(ventana, text="Número 1")
